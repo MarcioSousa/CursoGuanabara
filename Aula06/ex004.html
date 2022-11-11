@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt.br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,14 @@
         }
     </style>
 </head>
+
 <body>
     <script>
         var nome = window.prompt("Qual é o seu nome?")
         document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`)
         document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br/>`)
         document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.`)
-        
+
         /*
         1541.5
         > n1.toFixed(2)
@@ -31,7 +33,91 @@
         > n1.toLocaleString('pt-BR',{style: `currency`, currency: 'EUR'})
         '€ 1.541,50'
         */
-       
+
+        /* Atribuição Simples
+        > var a = 5 + 3
+        undefined
+        > var b = a % 5
+        undefined
+        > var c = 5 * b ** 2
+        undefined
+        > var d = 10 - a / 2
+        undefined
+        > var e = 6 * 2 / d
+        undefined
+        > var f = b % e + 4 / e
+        undefined
+        */
+
+        /*
+        > var x = 5
+        undefined
+        > var y = '5'
+        undefined
+        > x
+        5
+        > y
+        '5'
+        > typeof x
+        'number'
+        > typeof y
+        'string'
+        > x == y
+        true
+        > x === y
+        false
+        > x != y
+        false
+        > x !== y
+        true
+        > x =!= y
+        x =!= y
+            ^^
+
+        Uncaught SyntaxError: Unexpected token '!='
+        >
+        */
+
+        /*
+        > var a = 5
+        undefined
+        > var b = 8
+        undefined
+        > true && false
+        false
+        > true && true
+        true
+        > false || false
+        false
+        > false || true
+        true
+        > a > b && b % 2 == 0
+        false
+        > a <= b || b / 2 == 2
+        true
+        > var media  = 5.5
+        undefined
+        > media > 7
+        false
+        > media > 7? 'Aprovado':'Reprovado'
+        'Reprovado'
+        > var x = 8
+        undefined
+        > var res = x % 2 == 0 ? 5 : 9
+        undefined
+        > res
+        5
+        > x
+        8
+        > var idade = 19
+        undefined
+        > var r = idade >= 18 ? "MAIOR" : "MENOR"
+        undefined
+        > r
+        'MAIOR'
+        */
+
     </script>
 </body>
+
 </html>
